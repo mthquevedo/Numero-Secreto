@@ -1,46 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --font-family: 'Noto Sans', sans-serif;
+    --font-family: 'Open Sans', sans-serif;
     --bg-color: #12486B;
+    --light-color: #ffffff;
+    --dark-color: #1b1b1b;
     --primary-color: #F5FCCD;
     --secondary-color: #ffffff;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--secondary-color);
-    min-height: 100vh;
+    /*background-color: var(--bg-color);
+    color: var(--secondary-color);*/
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 0;
     font-family: var(--font-family);
-    font-weight: 300;
+}
+
+.sides {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    margin: 0;
+}
+
+.light-side {
+    background-color: var(--light-color);
+    min-height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.light-side img {
+    height: 3em;
+    width: 3em;
+    margin-left: 2em;
+    position: fixed;
+    top: 30px;
+}
+
+.dark-side {
+    background-color: var(--dark-color);
+    min-height: 100vh;
+    width: 50vw;
+}
+
+.circle {
+    border-radius: 50%;
+    position: fixed;
+    border: 3px solid rgb(102, 102, 102);
+}
+
+.circle-content {
+    background: rgb(106, 106, 106);
+    color: var(--light-color);
+    background: linear-gradient(149deg, rgba(106, 106, 106, 1) 0%, rgba(23, 23, 23, 1) 88%);
+    width: 40em;
+    height: 40em;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 50%;
 }
 
 h1 {
-    font-size: 4em;
-    font-weight: 400;
-    color: var(--primary-color);
+    font-size: 3.3em;
+    font-weight: 700;
+    margin-right: 3em;
+    margin-left: 0.7em;
+    color: var(--dark-color);
 }
 
 h3 {
     font-size: 2em;
-    margin-top: 20px;
+    margin-top: 0.6em;
+    margin-left: 1.17em;
 }
 
 .mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5em;
     margin-top: 40px;
 }
 
 .box {
-    border: 2px solid var(--primary-color);
     display: inline-block;
     font-size: 3em;
     padding: 10px;
-    margin: 20px;
 }
