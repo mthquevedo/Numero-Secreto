@@ -2,11 +2,20 @@ function verificaChute(chute) {
     const numero = +chute
 
     if (chuteInvalido(numero)) {
-        console.log('Valor inválido')
+        elementoChute.innerHTML += '<div class="warning">Sua resposta deve ser um número!</div>'
     }
 
     if (numeroMaiorOuMenor(numero)) {
-        console.log(`Valor inválido: o número precisa estar entre ${menorValor} e ${maiorValor}`)
+        elementoChute.innerHTML += `
+        <div class="warning">Fale um número entre ${menorValor} e ${maiorValor}!</div>
+        `
+    }
+
+    if (numero === numeroSecreto) {
+        document.body.innerHTML = `
+        <h2>Você acertou!</h2>
+        <h3>O número secreto era ${numeroSecreto}</h3>
+        `
     }
 }
 

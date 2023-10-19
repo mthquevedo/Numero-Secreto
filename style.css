@@ -9,6 +9,7 @@
     --secondary-color: #ffffff;
     --circle-bg: rgb(125, 181, 230);
     --circle-gd: linear-gradient(149deg, rgba(125, 181, 230, 1) 0%, rgba(1, 21, 38, 1) 88%);
+    --highlight-color: #F2C48D;
 }
 
 body {
@@ -106,19 +107,50 @@ h3 {
     bottom: 2em;
 }
 
+.chute-subtitle {
+    color: var(--highlight-color);
+    font-size: 1em;
+}
+
 .mensagem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 2.2em;
     text-align: center;
     color: var(--light-color);
     margin-top: 40px;
+    -webkit-animation: fade-in 2s linear;
+    animation: fade-in 2s linear;
 }
 
 .box {
-    display: inline-block;
     font-size: 3em;
     padding: 10px;
+    padding-bottom: 20px;
+}
+
+.warning {
+    font-size: 0.5em;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
