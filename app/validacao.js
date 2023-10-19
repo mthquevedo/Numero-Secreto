@@ -12,9 +12,8 @@ function verificaChute(chute) {
     }
 
     if (numero === numeroSecreto) {
-        document.body.innerHTML = `
-        <h2>Você acertou!</h2>
-        <h3>O número secreto era ${numeroSecreto}</h3>
+        elementoChute.innerHTML += `
+        <p class="win">Acertou!</p>
         `
     }
 }

@@ -121,8 +121,8 @@ h3 {
     text-align: center;
     color: var(--light-color);
     margin-top: 40px;
-    -webkit-animation: fade-in 2s linear;
-    animation: fade-in 2s linear;
+    -webkit-animation: fade-in 2s;
+    animation: fade-in 2s;
 }
 
 .box {
@@ -133,6 +133,11 @@ h3 {
 
 .warning {
     font-size: 0.5em;
+}
+
+.win {
+    color: var(--highlight-color);
+    font-size: 1.5em;
 }
 
 @-webkit-keyframes fade-in {
