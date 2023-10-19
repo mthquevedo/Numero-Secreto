@@ -4,9 +4,11 @@
     --font-family: 'Open Sans', sans-serif;
     --bg-color: #12486B;
     --light-color: #ffffff;
-    --dark-color: #1b1b1b;
+    --dark-color: #011526;
     --primary-color: #F5FCCD;
     --secondary-color: #ffffff;
+    --circle-bg: rgb(125, 181, 230);
+    --circle-gd: linear-gradient(149deg, rgba(125, 181, 230, 1) 0%, rgba(1, 21, 38, 1) 88%);
 }
 
 body {
@@ -56,9 +58,9 @@ body {
 }
 
 .circle-content {
-    background: rgb(106, 106, 106);
+    background: var(--circle-bg);
     color: var(--light-color);
-    background: linear-gradient(149deg, rgba(106, 106, 106, 1) 0%, rgba(23, 23, 23, 1) 88%);
+    background: var(--circle-gd);
     width: 40em;
     height: 40em;
     padding: 10px;
@@ -72,7 +74,7 @@ body {
 
 h1 {
     font-size: 3.3em;
-    font-weight: 700;
+    font-weight: bold;
     margin-right: 3em;
     margin-left: 0.7em;
     color: var(--dark-color);
@@ -84,12 +86,34 @@ h3 {
     margin-left: 1.17em;
 }
 
+.mq {
+    color: #002a44;
+    font-size: 13em;
+    font-weight: bold;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: fixed;
+    right: -0.6em;
+    bottom: 2.7em;
+}
+
+.dev-mq {
+    color: var(--light-color);
+    font-size: 0.8em;
+    position: fixed;
+    right: 3em;
+    bottom: 2em;
+}
+
 .mensagem {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
+    text-align: center;
+    color: var(--light-color);
     margin-top: 40px;
 }
 
