@@ -141,12 +141,21 @@ h3 {
 }
 
 .btn-jogar {
+    font-weight: bold;
     padding: 8px 15px;
     border: 0;
     color: var(--dark-color);
     background-color: var(--light-color);
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.btn-jogar:hover {
+    cursor: pointer;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    -webkit-animation: fade-in 1s;
+    animation: fade-in 1s;
 }
 
 @-webkit-keyframes fade-in {
