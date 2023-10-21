@@ -10,7 +10,6 @@ function verificaChute(chute) {
         elementoChute.innerHTML += `
         <div class="warning">Fale um número entre ${menorValor} e ${maiorValor}!</div>
         `
-        return
     }
 
     if (numero === numeroSecreto) {

@@ -21,4 +21,12 @@ function exibeChuteNaTela(chute) {
     `
 }
 
-recognition.addEventListener('end', () => recognition.start())
+recognition.addEventListener('end', () => {
+    const chuteNum = +chute
+
+    if (chuteNum === numeroSecreto) {
+        recognition.stop();
+    } else {
+        recognition.start();
+    }
+})
