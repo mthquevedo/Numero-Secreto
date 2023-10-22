@@ -215,7 +215,7 @@ h3 {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1307px) {
+@media screen and (min-width: 696px) and (max-width: 1307px) {
     .light-side {
         display: flex;
         flex-direction: column;
@@ -243,7 +243,7 @@ h3 {
     h1 {
         font-size: 2.4em;
         font-weight: bold;
-        margin-right: 1em;
+        margin-right: 0.2em;
         margin-left: 0.7em;
         color: var(--dark-color);
     }
@@ -251,7 +251,7 @@ h3 {
     h3 {
         font-size: 1.6em;
         margin-top: 0.6em;
-        margin-left: 1.11em;
+        margin-left: 1.10em;
     }
 
     .mq {
@@ -274,5 +274,157 @@ h3 {
 
     .dev-mq {
         font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 411px) and (max-width: 696px) {
+    .light-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-top: 7em;
+        box-sizing: border-box;
+    }
+
+    .light-side img {
+        height: 3em;
+        width: 3em;
+        margin-left: 1.5em;
+        position: fixed;
+        top: 30px;
+    }
+
+    .circle-content {
+        width: 25em;
+        height: 25em;
+        padding: 10px;
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+        font-weight: bold;
+        margin-right: 0.2em;
+        margin-left: 0.7em;
+        color: var(--dark-color);
+    }
+
+    h3 {
+        font-size: 1.6em;
+        margin-top: 0.6em;
+        margin-left: 1.10em;
+    }
+
+    .mq {
+        font-size: 9em;
+        right: -0.6em;
+        bottom: 5em;
+    }
+
+    .box {
+        font-size: 1.6em;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .mensagem {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .dev-mq {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .sides {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+
+    .dark-side {
+        height: 40vh;
+        width: 10vw;
+        box-sizing: border-box;
+    }
+
+    .light-side {
+        display: flex;
+        height: 60vh;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding-top: 7em;
+        box-sizing: border-box;
+    }
+
+    .light-side img {
+        height: 3em;
+        width: 3em;
+        margin-left: 1.1em;
+        position: fixed;
+        top: 30px;
+    }
+
+    .circle {
+        margin-top: 8%;
+        margin-right: 10%;
+    }
+
+    .circle-content {
+        width: 14em;
+        height: 14em;
+        margin: 30px;
+
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-right: 1em;
+        margin-left: 0.7em;
+        color: var(--dark-color);
+    }
+
+    h3 {
+        font-size: 1.4em;
+        margin-top: 0.6em;
+        margin-left: 1.02em;
+    }
+
+    .mq {
+        display: none;
+        font-size: 5em;
+        right: -0.6em;
+        bottom: 1.7em;
+    }
+
+    .box {
+        font-size: 1.6em;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .mensagem {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .dev-mq {
+        color: #011526;
+        font-weight: bold;
+        font-size: 0.5em;
+        left: 2em;
     }
 }
