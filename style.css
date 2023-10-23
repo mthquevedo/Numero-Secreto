@@ -418,6 +418,17 @@ h3 {
         padding: 10px;
     }
 
+    .win {
+        font-size: 0.8em;
+    }
+
+    .btn-jogar {
+        font-weight: bold;
+        padding: 5px 12px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
     .mensagem {
         font-size: 2em;
         text-align: center;
