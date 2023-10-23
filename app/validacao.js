@@ -3,7 +3,6 @@ function verificaChute(chute) {
 
     if (chuteInvalido(numero)) {
         elementoChute.innerHTML += '<div class="warning">Sua resposta deve ser um número!</div>'
-        return
     }
 
     if (numeroMaiorOuMenor(numero)) {
