@@ -21,7 +21,7 @@ function verificaChute(chute) {
         elementoChute.innerHTML += `
         <div class="warning">O número secreto é menor <i class="fa-solid fa-down-long"></i></div>
         `
-    } else {
+    } else if (numero < numeroSecreto) {
         elementoChute.innerHTML += `
         <div class="warning">O número secreto é maior <i class="fa-solid fa-up-long"></i></div>
         `
