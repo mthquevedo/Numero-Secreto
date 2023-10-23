@@ -118,7 +118,6 @@ h3 {
     font-size: 2.2em;
     text-align: center;
     color: var(--light-color);
-    margin-top: 40px;
     -webkit-animation: fade-in 2s;
     animation: fade-in 2s;
 }
@@ -126,7 +125,7 @@ h3 {
 .box {
     font-size: 3em;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .warning {
@@ -409,16 +408,23 @@ h3 {
         bottom: 1.7em;
     }
 
+    .chute-subtitle {
+        color: var(--highlight-color);
+        font-size: 0.6em;
+    }
+
     .box {
-        font-size: 1.6em;
+        font-size: 1.5em;
         padding: 10px;
-        padding-bottom: 20px;
     }
 
     .mensagem {
         font-size: 2em;
         text-align: center;
-        margin-top: 20px;
+    }
+
+    .warning {
+        font-size: 0.36em;
     }
 
     .dev-mq {
