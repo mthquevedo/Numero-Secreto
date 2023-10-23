@@ -419,6 +419,7 @@ h3 {
     }
 
     .win {
+        color: var(--highlight-color);
         font-size: 0.8em;
     }
 
