@@ -1,10 +1,8 @@
 ## Aplicação interativa com reconhecimento de voz por meio da Web Speech API
 
+A aplicação foi desenvolvida com o objetivo de ser um jogo que gera um número aleatório e desafia o usuário a adivinhá-lo por meio de dicas e comandos de voz, para interpretar esses comandos ela utiliza a Web Speech API.
+
 Link de acesso do projeto: https://mq-numero-secreto.vercel.app/
-
-##
-
-A aplicação foi desenvolvida com o objetivo de ser um jogo que gera um número aleatório e desafia o usuário a advinha-lo por meio de dicas e comandos de voz, para interpretar esses comandos ela utiliza a Web Speech API.
 
 Tecnologias utilizadas:
 
@@ -18,10 +16,10 @@ Tecnologias utilizadas:
 
 **Funções da Aplicação**:
 
-**Responsividade**: A aplicação é responsiva a dispositivos como computadores, notbooks, tablets e celulares.
+**Responsividade**: A aplicação é responsiva a dispositivos como computadores, notebooks, tablets e celulares.
 
 **Comandos de voz**: Uma vez que o usuário permitir por meio do navegador o acesso ao microfone, os comandos de voz serão interpretados e exibidos na tela em tempo real, e ao acertar o número secreto o uso da permissão é encerrado.
 
-**Validações**: Foram desenvolvidas validações para checar se a resposta do usuário é de fato um número e se o número está dentro dos limites definidos. Caso a o teste aponte uma incosistencia no resultado, um aviso surgirá para notificar o caso.
+**Validações**: Foram desenvolvidas validações para checar se a resposta do usuário é de fato um número e se o número está dentro dos limites definidos. Caso a o teste aponte uma inconsistência no resultado, um aviso surgirá para notificar o caso.
 
 **dicas de resposta**: Ao falar um número, a aplicação dará dicas se a resposta certa é um número maior ou menor com o objetivo de auxiliar o usuário a chegar na resposta correta.
