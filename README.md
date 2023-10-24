@@ -2,7 +2,7 @@
 
 A aplicação foi desenvolvida com o objetivo de ser um jogo que gera um número aleatório e desafia o usuário a adivinhá-lo por meio de dicas e comandos de voz, para interpretar esses comandos ela utiliza a Web Speech API.
 
-Link de acesso do projeto: https://mq-numero-secreto.vercel.app/
+<p>Link de acesso do projeto: <a href="https://mq-numero-secreto.vercel.app/" target="_blank" >https://mq-numero-secreto.vercel.app/</a></p>
 
 Tecnologias utilizadas:
 
